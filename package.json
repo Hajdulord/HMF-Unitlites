@@ -3,7 +3,7 @@
 	"version" : "1.0.0",
 	"displayName" : "HMF Utilities",
 	"description" : "",
-	"unity" : "2020.1"
+	"unity" : "2020.1",
 	"dependencies" : {
 	},
 	"keyworlds" : ["hmf", "extensions", "utilities", "tools"],
