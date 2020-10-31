@@ -18,3 +18,11 @@
 ### Added
 - Singleton Pattern
 - Generic Singleton that derives from MonoBehaviour both persistent and non
+
+## [1.0.3] - 2020.10.31.
+### Added
+- State Pattern
+- IState inteface for the State implementation
+- StateMachine for the logic of the statemachune
+### Changed
+- Upgraded to Unity 2020.1.11f1
