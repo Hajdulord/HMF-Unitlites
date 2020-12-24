@@ -1,9 +1,9 @@
 {
 	"name" : "com.hmf.hmf-utilities",
-	"version" : "1.0.3",
+	"version" : "1.0.4",
 	"displayName" : "HMF Utilities",
 	"description" : "",
-	"unity" : "2020.1",
+	"unity" : "2020.2",
 	"dependencies" : {
 	},
 	"keyworlds" : ["hmf", "extensions", "utilities", "tools"],
