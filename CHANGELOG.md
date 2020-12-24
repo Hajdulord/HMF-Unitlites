@@ -26,3 +26,15 @@
 - StateMachine for the logic of the statemachune
 ### Changed
 - Upgraded to Unity 2020.1.11f1
+
+## [1.0.4] - 2020.12.24.
+### Added
+- GenericObjectPool for objectpooling
+- GenericObjectPoolSafeSingle for thread safe objectpool
+- Utilities
+- DirectonTo
+- AngelToRad
+- RadToAngel
+- Rad/AngelToVector
+### Changed
+- Upgraded to Unity 2020.2.1f1
