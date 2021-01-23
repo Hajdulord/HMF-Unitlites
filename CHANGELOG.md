@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.5] - 2021.01.23.
+### Added
+- Meta files
+### Changed
+- StateMachine's visibility to public
+
 ## [1.0.4] - 2020.12.24.
 ### Added
 - GenericObjectPool for objectpooling
@@ -37,3 +43,4 @@
 
 ### Removed
 - All unnecessary meta files
+
