@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace HMF.HMFUtilities.DesignPatterns.StatePattern
 {
-    class StateMachine
+    public class StateMachine
     {
         private IState _currentState;
         private Dictionary<Type, List<Transition>> _transitions = new Dictionary<Type, List<Transition>>();
