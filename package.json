@@ -1,8 +1,8 @@
 {
 	"name" : "com.hmf.hmf-utilities",
-	"version" : "1.0.4",
+	"version" : "1.0.5",
 	"displayName" : "HMF Utilities",
-	"description" : "",
+	"description" : "Some design patterns and useful functions that I use",
 	"unity" : "2020.2",
 	"dependencies" : {
 	},
