@@ -1,6 +1,8 @@
 # Changelog
 
-## [1.0.4] - 2021.01.23.
+## [1.0.5] - 2021.01.23.
+### Added
+- Meta files
 ### Changed
 - StateMachine's visibility to public
 
@@ -41,3 +43,4 @@
 
 ### Removed
 - All unnecessary meta files
+
