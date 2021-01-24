@@ -5,6 +5,7 @@
 - Meta files
 ### Changed
 - StateMachine's visibility to public
+- SetState's visibility to public
 
 ## [1.0.4] - 2020.12.24.
 ### Added
