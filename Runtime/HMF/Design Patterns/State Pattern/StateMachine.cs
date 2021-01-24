@@ -23,7 +23,7 @@ namespace HMF.HMFUtilities.DesignPatterns.StatePattern
             }
         }
 
-        private void SetState(IState state)
+        public void SetState(IState state)
         {
             if (state == _currentState)
                 return;
