@@ -1,10 +1,17 @@
 # Changelog
 
+## [1.1.0] - 2021.02.06.
+### Added
+- Extensions methods for conversions between Vector2 and Vector3
+### Changed
+- Changed to Unity version 2020.2.3f1
+
 ## [1.0.5] - 2021.01.23.
 ### Added
 - Meta files
 ### Changed
 - StateMachine's visibility to public
+- SetState's visibility to public
 
 ## [1.0.4] - 2020.12.24.
 ### Added

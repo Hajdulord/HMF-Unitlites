@@ -18,12 +18,11 @@ namespace HMF.HMFUtilities.DesignPatterns.StatePattern
             if (transition != null)
             {
                 SetState(transition.To);
-
-                _currentState?.Tick();
             }
+                _currentState?.Tick();
         }
 
-        private void SetState(IState state)
+        public void SetState(IState state)
         {
             if (state == _currentState)
                 return;
