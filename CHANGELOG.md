@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0] -2021.02.16.
+### Added
+- Unit tests for extension methods and for unititis
+- All Tests passed
+### Changed
+- Fixed wrong Rad to Angle conversion
+- Fixed wrong Angle to Vec2/Vec3 conversion
+
 ## [1.1.0] - 2021.02.06.
 ### Added
 - Extensions methods for conversions between Vector2 and Vector3

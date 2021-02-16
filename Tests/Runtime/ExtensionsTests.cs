@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 using HMF.HMFUtilities.Utilities;
 
-namespace Tests
+namespace HMF.HMFUtilities.Tests.Runtime
 {
     /// Tests for the extension methods in HMF-Utilities.
     public class ExtensionsTests
