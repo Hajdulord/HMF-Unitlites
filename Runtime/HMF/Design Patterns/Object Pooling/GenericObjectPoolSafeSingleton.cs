@@ -1,9 +1,8 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using HMF.HMFUtilities.DesignPatterns.SingletonPattern;
+using HMF.DesignPatterns.SingletonPattern;
 
-namespace HMF.HMFUtilities.DesignPatterns.Objectpooling
+namespace HMF.DesignPatterns.Objectpooling
 {
     public class GenericObjectPoolSafeSingleton<T> : SingletonMonoPersistent<GenericObjectPoolSafeSingleton<T>> where T : Component
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace HMF.HMFUtilities.DesignPatterns.StatePattern
+namespace HMF.DesignPatterns.StatePattern
 {
     public class StateMachine
     {
@@ -19,7 +19,7 @@ namespace HMF.HMFUtilities.DesignPatterns.StatePattern
             {
                 SetState(transition.To);
             }
-                _currentState?.Tick();
+            _currentState?.Tick();
         }
 
         public void SetState(IState state)

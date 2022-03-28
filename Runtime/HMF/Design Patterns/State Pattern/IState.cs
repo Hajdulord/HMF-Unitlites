@@ -1,4 +1,4 @@
-﻿namespace HMF.HMFUtilities.DesignPatterns.StatePattern
+﻿namespace HMF.DesignPatterns.StatePattern
 {
     public interface IState
     {

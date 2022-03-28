@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace HMF.HMFUtilities.Utilities{
+namespace HMF.Utilities{
     public static class Extensions
     {
         public static Vector3 ToVector3(this Vector2 vector, float z = 0) => new Vector3(vector.x , vector.y, z);

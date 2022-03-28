@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
-namespace HMF.HMFUtilities.DesignPatterns.CommandPattern
+namespace HMF.DesignPatterns.CommandPattern
 {
     public class CommandProcessor
     {

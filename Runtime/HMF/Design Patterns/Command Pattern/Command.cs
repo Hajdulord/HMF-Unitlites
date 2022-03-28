@@ -1,4 +1,6 @@
-﻿namespace HMF.HMFUtilities.DesignPatterns.CommandPattern
+﻿using HMF.HMFUtilities;
+
+namespace HMF.DesignPatterns.CommandPattern
 {
     public abstract class Command
     {

@@ -1,8 +1,8 @@
 using UnityEngine;
 
-namespace HMF.HMFUtilities.Utilities
+namespace HMF.Utilities
 {
-    public class HMFutilities
+    public static class HMFUtilities
     {
         public static float DirectionTo(float from, float to) => to - from;
         public static float AngleToRad(float angle) => angle * (Mathf.PI / 180);

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace HMF.HMFUtilities.DesignPatterns.SingletonPattern
+namespace HMF.DesignPatterns.SingletonPattern
 {
     // credit : wiki.unity3d.com/index.php?title=Singleton#Generic_Based_Singleton_for_MonoBehaviours
     public class SingletonMono<T> : MonoBehaviour where T : MonoBehaviour

@@ -1,11 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
-using HMF.HMFUtilities.Utilities;
 
-namespace HMF.HMFUtilities.Tests.Runtime
+namespace HMF.Tests.Runtime
 {
     public class UtilitiesTests
     {
@@ -17,9 +13,9 @@ namespace HMF.HMFUtilities.Tests.Runtime
             var from = 5f;
             var to = 2f;
 
-            Assert.AreEqual(-3, HMFutilities.DirectionTo(from, to));
+            Assert.AreEqual(-3, Utilities.HMFUtilities.DirectionTo(from, to));
 
-            Assert.AreNotEqual(-3, HMFutilities.DirectionTo(to, from));
+            Assert.AreNotEqual(-3, Utilities.HMFUtilities.DirectionTo(to, from));
         }
 
         /// Tests for AngleToRad
@@ -28,9 +24,9 @@ namespace HMF.HMFUtilities.Tests.Runtime
         {
             var angle = 180f;
 
-            Assert.AreEqual(Mathf.PI, HMFutilities.AngleToRad(angle));
+            Assert.AreEqual(Mathf.PI, Utilities.HMFUtilities.AngleToRad(angle));
 
-            Assert.AreEqual(2 * Mathf.PI, HMFutilities.AngleToRad(2 * angle));
+            Assert.AreEqual(2 * Mathf.PI, Utilities.HMFUtilities.AngleToRad(2 * angle));
         }
 
         /// Tests for RadToAngle
@@ -39,10 +35,10 @@ namespace HMF.HMFUtilities.Tests.Runtime
         {
             var rad = Mathf.PI;
 
-            Assert.AreEqual(180f, HMFutilities.RadToAngle(rad));
+            Assert.AreEqual(180f, Utilities.HMFUtilities.RadToAngle(rad));
 
 
-            Assert.AreEqual(360f, HMFutilities.RadToAngle(2 * rad));
+            Assert.AreEqual(360f, Utilities.HMFUtilities.RadToAngle(2 * rad));
         }
 
         /// Tests for Angle to Vector2 with a margin of 1f
@@ -50,25 +46,25 @@ namespace HMF.HMFUtilities.Tests.Runtime
         public void AngleToVector2()
         {
             var expected = new Vector2(0f, 1f);
-            var real = HMFutilities.AngleToVector2(90f);
+            var real = Utilities.HMFUtilities.AngleToVector2(90f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector2(1f, 1f);
-            real = HMFutilities.AngleToVector2(360f);
+            real = Utilities.HMFUtilities.AngleToVector2(360f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector2(0f, -1f);
-            real = HMFutilities.AngleToVector2(180f);
+            real = Utilities.HMFUtilities.AngleToVector2(180f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector2(0.7f, 0.7f);
-            real = HMFutilities.AngleToVector2(45f);
+            real = Utilities.HMFUtilities.AngleToVector2(45f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
@@ -80,25 +76,25 @@ namespace HMF.HMFUtilities.Tests.Runtime
         public void AngleToVector3()
         {
             var expected = new Vector3(0f, 1f);
-            var real = HMFutilities.AngleToVector3(90f);
+            var real = Utilities.HMFUtilities.AngleToVector3(90f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector3(1f, 1f);
-            real = HMFutilities.AngleToVector3(360f);
+            real = Utilities.HMFUtilities.AngleToVector3(360f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector3(0f, -1f);
-            real = HMFutilities.AngleToVector3(180f);
+            real = Utilities.HMFUtilities.AngleToVector3(180f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector3(0.7f, 0.7f);
-            real = HMFutilities.AngleToVector3(45f);
+            real = Utilities.HMFUtilities.AngleToVector3(45f);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
@@ -110,25 +106,25 @@ namespace HMF.HMFUtilities.Tests.Runtime
         public void RadToVector2()
         {
             var expected = new Vector2(0f, 1f);
-            var real = HMFutilities.RadToVector2(Mathf.PI / 2);
+            var real = Utilities.HMFUtilities.RadToVector2(Mathf.PI / 2);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector2(1f, 1f);
-            real = HMFutilities.RadToVector2(2 * Mathf.PI);
+            real = Utilities.HMFUtilities.RadToVector2(2 * Mathf.PI);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector2(0f, -1f);
-            real = HMFutilities.RadToVector2(Mathf.PI);
+            real = Utilities.HMFUtilities.RadToVector2(Mathf.PI);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector2(0.7f, 0.7f);
-            real = HMFutilities.RadToVector2(Mathf.PI / 4);
+            real = Utilities.HMFUtilities.RadToVector2(Mathf.PI / 4);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
@@ -140,25 +136,25 @@ namespace HMF.HMFUtilities.Tests.Runtime
         public void RadToVector3()
         {
             var expected = new Vector3(0f, 1f);
-            var real = HMFutilities.RadToVector3(Mathf.PI / 2);
+            var real = Utilities.HMFUtilities.RadToVector3(Mathf.PI / 2);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector3(1f, 1f);
-            real = HMFutilities.RadToVector3(2 * Mathf.PI);
+            real = Utilities.HMFUtilities.RadToVector3(2 * Mathf.PI);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector3(0f, -1f);
-            real = HMFutilities.RadToVector3(Mathf.PI);
+            real = Utilities.HMFUtilities.RadToVector3(Mathf.PI);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);
 
             expected = new Vector3(0.7f, 0.7f);
-            real = HMFutilities.RadToVector3(Mathf.PI / 4);
+            real = Utilities.HMFUtilities.RadToVector3(Mathf.PI / 4);
 
             Assert.AreEqual(expected.x, real.x, 1f);
             Assert.AreEqual(expected.y, real.y, 1f);

@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
-using HMF.HMFUtilities.Utilities;
+using HMF.Utilities;
 
-namespace HMF.HMFUtilities.Tests.Runtime
+namespace HMF.Tests.Runtime
 {
     /// Tests for the extension methods in HMF-Utilities.
     public class ExtensionsTests

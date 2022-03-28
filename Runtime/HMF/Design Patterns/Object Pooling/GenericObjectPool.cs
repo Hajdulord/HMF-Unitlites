@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace HMF.HMFUtilities.DesignPatterns.Objectpooling
+namespace HMF.DesignPatterns.Objectpooling
 {
     public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
     {
